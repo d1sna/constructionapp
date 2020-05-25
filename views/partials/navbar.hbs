@@ -1,0 +1,21 @@
+<nav class='cyan lighten-1'>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"> Отчеты в СУПД</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            {{#if isMainPage}}
+            <li class="active"><a href="/">Главная страница</a></li>
+            {{else}}
+            <li><a href="/">Главная страница</a></li>
+            {{/if}}
+
+            {{#if isCreatePage}}
+            <li class="active"><a href="/create">Создать отчет</a></li>
+            {{else}}
+            <li><a href="/create">Создать отчет</a></li>
+            {{/if}}
+
+        </ul>
+    </div>
+
+</nav>
