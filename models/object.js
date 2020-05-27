@@ -2,11 +2,27 @@ const {
     Schema,
     model
 } = require('mongoose'),
-    schema = new Schema({
-        title: {
+    objectSchema = new Schema({
+        objectname: {
+            type: String
+        },
+        location: {
             type: String,
             required: true
+        },
+        deffects: {
+            type: String,
+            required: true
+        },
+        photo: {
+            type: String,
+        },
+        result: {
+            type: String
         }
     });
 
-module.exports = schema;
+let Object = model('Object', objectSchema);
+
+
+module.exports = Object;

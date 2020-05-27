@@ -1,6 +1,6 @@
 <nav class='cyan lighten-1'>
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo"> Отчеты в СУПД</a>
+        <a href="/" class="brand-logo"> Отчеты в СУПД</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
 
             {{#if isMainPage}}
@@ -15,7 +15,12 @@
             <li><a href="/create">Создать отчет</a></li>
             {{/if}}
 
+            {{#if isShowPage}}
+            <li class="active"><a href="/show">Показать отчеты</a></li>
+            {{else}}
+            <li><a href="/show">Показать отчеты</a> </li>
+            {{/if}}
+
         </ul>
     </div>
-
 </nav>

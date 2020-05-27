@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th>Название объекта</th>
+            <th>Локация</th>
+            <th>Деффекты</th>
+            <th>Фото</th>
+            <th>Результат</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each data}}
+        <tr>
+            <td>{{{objectname}}}</td>
+            <td>{{{location}}}</td>
+            <td>{{{deffects}}}</td>
+            <td>{{{photo}}}</td>
+            <td>{{{result}}}</td>
+        </tr>
+        {{/each}}
+
+
+    </tbody>
+</table>
