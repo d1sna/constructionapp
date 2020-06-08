@@ -1,4 +1,20 @@
-ГЛАВНАЯ СТРАНИЦА
-{{#if succsefulCreation}}
-123
-{{/if}}
+<p>
+    ГЛАВНАЯ СТРАНИЦА
+</p>
+<div class="row">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telephone</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" id="create-report-button" type="submit" name="action">Войти в
+            кабинет</button>
+        <a href='/' class="waves-effect waves-light btn red">Зарегестрироваться</a>
+    </form>
+</div>
