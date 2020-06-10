@@ -1,0 +1,46 @@
+<div class="row">
+    <p>ФОРМА РЕГИСТРАЦИИ</p>
+    {{#if text}}
+    <div class="card-panel #f44336 red">{{text}}</div>
+    {{/if}}
+    <form action="/registration" method="POST" class="col s12" id="report-form">
+        <div class="input-field col s6">
+
+            <div class="row">
+                <label for="fullname">Ваше имя (полностью)</label>
+                <input placeholder="" name="fullname" type="text" class="validate">
+            </div>
+
+            <div class="row">
+                <label for="photo">Должность</label>
+                <input placeholder="" name="employeRank" type="text" class="validate">
+            </div>
+
+            <div class="row">
+                <label for="result">Организация</label>
+                <input placeholder="" name="organisation" type="text" class="validate">
+            </div>
+
+            <div class="row">
+                <label for="result">Логин</label>
+                <input placeholder="" name="login" type="text" class="validate">
+            </div>
+
+            <div class="row">
+                <label for="result">Пароль</label>
+                <input placeholder="" name="password" type="password" class="validate">
+            </div>
+
+            <div class="row">
+                <label for="result">Повторите пароль</label>
+                <input placeholder="" name="passwordCheck" type="password" class="validate">
+            </div>
+
+            <button class="btn waves-effect waves-light" id="create-report-button" type="submit" name="action">
+                Зарегистрироваться
+            </button>
+            <a href='/' class="waves-effect waves-light btn red">Отменить</a>
+
+        </div>
+    </form>
+</div>

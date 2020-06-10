@@ -21,6 +21,12 @@
             <li><a href="/show">Показать отчеты</a> </li>
             {{/if}}
 
+            {{#if isLk}}
+            <li class="active"><a href="/lk">Личный кабинет</a></li>
+            {{else}}
+            <li><a href="/lk">Личный кабинет</a> </li>
+            {{/if}}
+
         </ul>
     </div>
 </nav>

@@ -2,29 +2,36 @@
     <p>СТРАНИЦА СОЗДАНИЯ ОТЧЕТОВ</p>
     <form action="/create" method="POST" class="col s12" id="report-form">
         <div class="input-field col s6">
+
             <div class="row">
                 <label for="objectname">Название объекта</label>
                 <input placeholder="Введите местоположение объекта" name="objectname" type="text" class="validate">
             </div>
+
             <div class="row">
                 <label for="location">Местоположение</label>
                 <input placeholder="Введите местоположение объекта" name="location" type="text" class="validate">
             </div>
+
             <div class="row">
                 <label for="deffects">Деффекты</label>
                 <input placeholder="Введите деффекты объекта" name="deffects" type="text" class="validate">
             </div>
+
             <div class="row">
                 <label for="photo">Фотография</label>
                 <input placeholder="Добавьте ссылку на фото" name="photo" type="text" class="validate">
             </div>
+
             <div class="row">
                 <label for="result">Результаты</label>
                 <input placeholder="Введите результаты замеров" name="result" type="text" class="validate">
             </div>
+
             <button class="btn waves-effect waves-light" id="create-report-button" type="submit" name="action">Создать
                 отчет</button>
             <a href='/' class="waves-effect waves-light btn red">Отменить</a>
+
         </div>
     </form>
 </div>
